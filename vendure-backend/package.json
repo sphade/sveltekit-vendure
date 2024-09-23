@@ -1,0 +1,27 @@
+{
+  "name": "vendure-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "ts-node ./src/index.ts",
+    "dev:worker": "ts-node ./src/index-worker.ts",
+    "dev": "concurrently npm:dev:*",
+    "build": "tsc",
+    "start:server": "node ./dist/index.js",
+    "start:worker": "node ./dist/index-worker.js",
+    "start": "concurrently npm:start:*"
+  },
+  "dependencies": {
+    "@vendure/admin-ui-plugin": "3.0.3",
+    "@vendure/asset-server-plugin": "3.0.3",
+    "@vendure/core": "3.0.3",
+    "@vendure/email-plugin": "3.0.3",
+    "dotenv": "16.4.5",
+    "pg": "8.13.0"
+  },
+  "devDependencies": {
+    "@vendure/cli": "3.0.3",
+    "concurrently": "9.0.1",
+    "typescript": "5.3.3"
+  }
+}

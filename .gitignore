@@ -1,0 +1,31 @@
+vendure-backend/node_modules
+vendure-backend/dist
+vendure-backend/admin-ui
+vendure-backend/static/assets
+vendure-backend/static/email/test-emails
+
+
+# Dependencies
+store-front/node_modules
+
+# Output
+store-front/.output
+store-front/.vercel
+store-front/.svelte-kit
+store-front/build
+
+# OS
+store-front/.DS_Store
+store-front/Thumbs.db
+
+# Env
+store-front/.env
+store-front/.env.*
+!store-front/.env.example
+!store-front/.env.test
+
+# Vite
+store-front/vite.config.js.timestamp-*
+store-front/vite.config.ts.timestamp-*
+
+store-front/$houdini
